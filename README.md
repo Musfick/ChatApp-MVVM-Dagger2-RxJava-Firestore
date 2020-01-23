@@ -31,7 +31,8 @@ In google-services.json use
 -Used language Java
 
 ## App overview 
-<img src="Video.gif" width="200" height="400">
+<img src="Mobile.gif" width="200" height="400">
 
 ## Project Structure 
-<img src="3.JPG">
+<img src="Capture1.JPG">
+<img src="Capture2.JPG">
