@@ -22,6 +22,7 @@ In google-services.json use
 -View user profile <br/>
 
 ## Used Component
+-MVVM <br/>
 -FirestoreUI<br/>
 -Firestore <br/>
 -AndroidX <br/>
