@@ -1,6 +1,11 @@
 # ChatApp-MVVM-Dagger2-RxJava-Firestore
 
 This is a android app practice project. I have created a Chat App. I combined this project with RxJava+Dagger2+MVVM+Firestore.
+In google-services.json use
+"api_key":
+{
+        "current_key": "Enter Your api key"
+}
 
 ## App features
 -Sign in <br/>
