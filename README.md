@@ -22,7 +22,7 @@ In google-services.json use
 -View user profile <br/>
 
 ## Used Component
--FirebaseRecylerAdapter<br/>
+-FirestoreUI<br/>
 -Firestore <br/>
 -AndroidX <br/>
 -ViewModel and LiveData <br/>
