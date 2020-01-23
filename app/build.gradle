@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.foxhole.chatappmvvmdagger2rxjavafirestore"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //Material Design
+    def material_version = "1.2.0-alpha02"
+    implementation "com.google.android.material:material:$material_version"
+
+    //LiveData & ViewModel
+    def lifecycle_version = "2.1.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    //RxJava & RxAndroid
+    def rx_android = "2.1.1"
+    def rx_java = "2.2.16"
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java"
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_android"
+
+    //Dagger2
+    def dagger_version = "2.25.4"
+    api "com.google.dagger:dagger-android:$dagger_version"
+    api "com.google.dagger:dagger-android-support:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    api "com.google.dagger:dagger:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
+
+    //Rx Binding
+    def rxBinding_version = "3.1.0"
+    implementation "com.jakewharton.rxbinding3:rxbinding:$rxBinding_version"
+    implementation "com.jakewharton.rxbinding3:rxbinding-material:$rxBinding_version"
+
+    //Circular ImageView
+    def circularImage_version = "3.0.1"
+    implementation "de.hdodenhof:circleimageview:$circularImage_version"
+
+    //Glide
+    def glide_version = "4.10.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+    //RxPermission
+    def rx_permission = "0.7.0"
+    implementation "com.vanniktech:rxpermission:0.7.0"
+
+    //Compressor
+    def compressor = "2.1.0"
+    implementation "id.zelory:compressor:$compressor"
+
+    //Blur Image
+    def blur_version = "4.1.0"
+    implementation "jp.wasabeef:glide-transformations:$blur_version"
+
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    //Firebase
+    def firebase_auth = "19.2.0"
+    def firebase_firestore = "21.3.1"
+    def firebase_storage = "19.1.0"
+    def firebase_ui = "6.2.0"
+    implementation "com.google.firebase:firebase-auth:$firebase_auth"
+    implementation "com.google.firebase:firebase-firestore:$firebase_firestore"
+    implementation "com.firebaseui:firebase-ui-firestore:$firebase_ui"
+    implementation "com.google.firebase:firebase-storage:$firebase_storage"
+}

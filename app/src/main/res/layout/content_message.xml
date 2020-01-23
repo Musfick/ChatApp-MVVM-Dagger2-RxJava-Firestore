@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.message.MessageActivity"
+    tools:showIn="@layout/activity_message">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <View
+            android:background="@color/grey_10"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:padding="13.0dip"
+                android:src="@drawable/ic_image"
+                android:tint="@color/grey_40" />
+
+            <EditText
+                android:id="@+id/message_input"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@android:color/transparent"
+                android:hint="Message"
+                android:imeOptions="actionSearch" />
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:padding="14.0dip"
+                android:src="@drawable/ic_attach_file"
+                android:tint="@color/grey_40" />
+
+            <ImageView
+                android:id="@+id/message_send_btn"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:padding="12.0dip"
+                android:src="@drawable/ic_send"
+                android:tint="@color/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "960491744827",
+    "firebase_url": "https://chat-appmvvmdagger2rxjavafires.firebaseio.com",
+    "project_id": "chat-appmvvmdagger2rxjavafires",
+    "storage_bucket": "chat-appmvvmdagger2rxjavafires.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960491744827:android:035b3fc3746e725684f61e",
+        "android_client_info": {
+          "package_name": "com.foxhole.chatappmvvmdagger2rxjavafirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960491744827-a89pl35l91qnnqopmlaaq2qronpp88kn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.foxhole.chatappmvvmdagger2rxjavafirestore",
+            "certificate_hash": "12b109805deb4b047de48fc583a74cb60d12d322"
+          }
+        },
+        {
+          "client_id": "960491744827-ep8jgs1r7nj4c8en2crh3ij6ro66lu05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxjIca9DhznTteZUrIl5U8GVYUz8Errn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960491744827-ep8jgs1r7nj4c8en2crh3ij6ro66lu05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

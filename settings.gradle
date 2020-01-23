@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Chat App(MVVM+Dagger2+RxJava+Firestore)'
