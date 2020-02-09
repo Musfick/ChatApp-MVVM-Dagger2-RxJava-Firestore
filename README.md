@@ -32,7 +32,7 @@ In google-services.json use
 -Used language Java
 
 ## App overview 
-<img src="Mobile.gif" width="250" height="400">
+<img src="Mobile.gif" width="220" height="400">
 
 ## Project Structure 
 <img src="Capture1.JPG">
